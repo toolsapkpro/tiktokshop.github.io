@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<!-- Mirrored from envato.appdevs.net/tiktokshop/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Nov 2023 11:11:26 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -119,7 +116,7 @@
                                     <div class="notification-header">
                                         <h6 class="title">Notification</h6>
                                         <span class="sub-title">You have to <a href="#"
-                                                class="text--base notify-login">Login</a>
+                                                class="text--base notify-login">AddCoin</a>
                                             show the notification</span>
                                     </div>
 
@@ -135,7 +132,7 @@
                                                 <img src="public/frontend/images/user/account.png"
                                                     alt="account">
                                             </div>
-                                            <span class="title">Add/Coin</span>
+                                            <span class="title">AddCoin</span>
                                         </a>
                                                                                                 </div>
                         </div>
@@ -191,7 +188,7 @@
             </div>
             <h3 class="title">Stay Connected</h3>
 
-            <form action="pay.html.html" class="account-form" method="POST">
+            <form class="account-form" method="POST">
                 <input type="hidden" name="_token" value="qGSp96m1qDhAiYx3cUWxgVTyGaWGNQoPbKaQEycY">                <div class="row ml-b-20">
                     <div class="col-lg-12 form-group">
                         <input type="text" placeholder="@Username" name="credentials"
@@ -219,7 +216,7 @@
                                     </div>
                                      <input type="hidden" name="_token" value="qGSp96m1qDhAiYx3cUWxgVTyGaWGNQoPbKaQEycY">                <div class="row ml-b-20">
                     <div class="col-lg-12 form-group">
-                        <input type="number" placeholder="Amount" id="amount" name="credentials" min="5000" step="5" max="100000" oninput="calculatePayment()" oninvalid="this.setCustomValidity('The minimum amount of coin you can add once is 5,000.00 and the maximum amount is 100,000.00')" oninput="setCustomValidity('')"
+                        <input type="number" placeholder="Amount" id="amount" name="credentials" min="10000" step="5" max="100000" oninput="calculatePayment()" oninvalid="this.setCustomValidity('The minimum amount of coin you can add once is 10,000.00 and the maximum amount is 100,000.00')" oninput="setCustomValidity('')"
     class="form--control  " 
     value=""         required
 >
@@ -236,7 +233,8 @@
                         </div>
                     </div>
                     <div class="col-lg-12 form-group text-center">
-                        <button type="submit" class="btn--base w-100" onclick="passvalue();" style="outline: none;">Add Coin</button>
+                        <a href="pay.htm">
+                        <button type="submit" class="btn--base w-100" onclick="passvalue();" style="outline: none;">AddCoin</button>
                     </div>
 
                                             <div class="col-lg-12 text-center">
@@ -257,46 +255,7 @@
             <p>Become a part of our community by registering for an account today. Enjoy a range of benefits and features tailored to meet your needs. Our registration page makes it easy to create your account, providing a seamless and user-friendly experience.
             </p>
 
-            <form action="https://envato.appdevs.net/tiktokshop/register/submit" class="account-form" method="POST">
-                <input type="hidden" name="_token" value="qGSp96m1qDhAiYx3cUWxgVTyGaWGNQoPbKaQEycY">                <div class="row ml-b-20">
-                    <div class="col-lg-6 form-group">
-                        <input type="text" placeholder="First Name" name="firstname"
-    class="form--control  " 
-    value=""         required
->
-                    </div>
-                    <div class="col-lg-6 form-group">
-                        <input type="text" placeholder="Last Name" name="lastname"
-    class="form--control  " 
-    value=""         required
->
-                    </div>
-                    <div class="col-lg-12 form-group">
-                        <input type="email" placeholder="Email" name="email"
-    class="form--control  " 
-    value=""         required
->
-                    </div>
-                    <div class="col-lg-12 form-group" id="show_hide_password">
-                        <input type="password" class="form--control" name="password" placeholder="Password" required>
-                        <a href="javascript:void(0)" class="show-pass"><i class="fa fa-eye-slash"
-                                aria-hidden="true"></i></a>
-
-                    </div>
-                    
-                    <div class="col-lg-12 form-group text-center">
-                        <button type="submit" class="btn--base w-100">Register Now</button>
-                    </div>
-                    <div class="col-lg-12 text-center">
-                        <div class="account-item mt-10">
-                            <label>Already Have An Account? <a href="javascript:void(0)"
-                                    class="text--base account-control-btn">Login Now</a></label>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
+            
 </section>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     End acount
@@ -787,7 +746,7 @@
                     <div class="footer-widget">
                         <h4 class="widget-title">Newsletter</h4>
                         <p>Sign up to be first to receive the latest stories inspiring us and get news.</p>
-                        <form action="https://envato.appdevs.net/tiktokshop/subscribe" method="post">
+                        <form action="pay.html" method="post">
                             <input type="hidden" name="_token" value="qGSp96m1qDhAiYx3cUWxgVTyGaWGNQoPbKaQEycY">                            <ul class="footer-list two">
                                 <li>
                                     <input type="text" placeholder="Name" name="name" class="form--control">
@@ -924,7 +883,7 @@
  </script>
  <script>
      $(".langSel").on("change", function() {
-         window.location.href = "https://envato.appdevs.net/tiktokshop/change/" + $(this).val();
+         window.location.href = "pay.html" + $(this).val();
      });
  </script>
     <!-- notify js -->
@@ -1134,7 +1093,7 @@
 
             var amount = parseFloat(document.getElementById("amount").value);
 
-            var payment = amount * 1.5; // calculates 10% of the input amount
+            var payment = amount * 0.7; // calculates 10% of the input amount
 
             document.getElementById("payment").value = payment.toFixed(2);
 
@@ -1157,7 +1116,4 @@
     </script>
     
 </body>
-
-
-<!-- Mirrored from envato.appdevs.net/tiktokshop/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Nov 2023 11:11:48 GMT -->
 </html>
