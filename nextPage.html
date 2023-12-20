@@ -233,9 +233,8 @@ font-family: 'Poppins', sans-serif;
     // Function to replace the content of .acc with "Payment received"
     function showPaymentReceivedMessage() {
             const accElement = document.getElementById("paymentStatus");
-            accElement.innerHTML = "<p style='text-align: center; color: green;'>Payment received successfully. Proceed to TikTok<a style='text-decoration: none; ' href='mailto:johnismailuu@gmail.com'></a><br> <br> <a style='text-decoration: none; color: green;' href=''>Check again</a>   </p>";
+            accElement.innerHTML = "<p style='text-align: center; color: red;'>Payment not received you can contact this email <a style='text-decoration: none; ' href='mailto:support@appdevs.net'>Here</a><br> <br> <img src=""> <a style='text-decoration: none; color: green;' href=''>Check again</a>   </p>";
         }
-
         // Set a timer to call the showPaymentReceivedMessage function after 5 seconds
         setTimeout(showPaymentReceivedMessage, 15000); // 5000 milliseconds = 5 seconds
     
